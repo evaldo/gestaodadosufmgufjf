@@ -1,2 +1,3 @@
 https://dados.gov.br/dataset/registro-de-ocupacao-hospitalar
 https://dados.gov.br/dataset/casos-nacionais
+https://dados.gov.br/dataset/covid-19-vacinacao
