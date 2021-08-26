@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#"
+     xml:base="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#enderecoDoLocalDeVacinacaoPossui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#enderecoDoLocalDeVacinacaoPossui">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoLocalVacinacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#enderecoPacientePossui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#enderecoPacientePossui">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoPaciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#localDeVacinacaoPossui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#localDeVacinacaoPossui">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoLocalVacinacao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#localVacinacaoAtende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#localVacinacaoAtende">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacientePertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacientePertence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GrupoDeAtendimentoDoVacinado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacientePossui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacientePossui">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoPaciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacienteRecebe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacienteRecebe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#paisPossuiRegiao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#paisPossuiRegiao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Pais"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoCentroOesteECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoCentroOesteECompostaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CentroOeste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DF"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GO"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoNordesteECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoNordesteECompostaPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Nordeste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AL"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#BA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PB"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RN"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoNorteECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoNorteECompostaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Norte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AM"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RO"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#TO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoSudesteECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoSudesteECompostaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sudeste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#ES"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MG"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RJ"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoSulECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#regiaoSulECompostaPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sul"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinaPertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinaPertence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CategoriaDaVacina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SistemaDeOrigemDaVacina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinaPossui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinaPossui">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#FabricanteDaVacina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDOPaisDoVacinado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDOPaisDoVacinado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Pais"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDaVacina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDaVacina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoEnderecamentoPostal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoEnderecamentoPostal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoMunicipioDoLocalDeVacinacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoMunicipioDoLocalDeVacinacao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoIBGEMunicipio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoIBGEMunicipio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataNascimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataNascimento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#descricaoDaDoseDaVacina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#descricaoDaDoseDaVacina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#idade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#idade">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nacionalidadeDoVacinado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nacionalidadeDoVacinado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDaVacina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDaVacina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoFabricateDaVacina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoFabricateDaVacina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#FabricanteDaVacina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoMunicipio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoMunicipio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeFantasiaDoLocalDeVacinacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeFantasiaDoLocalDeVacinacao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#numeroDoLoteDaVacina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#numeroDoLoteDaVacina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#razaoSocialDoLocalDeVacinacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#razaoSocialDoLocalDeVacinacao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Amarela -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Amarela">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#BA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#BA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Branca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Branca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CategoriaDaVacina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CategoriaDaVacina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CentroOeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CentroOeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DadoSocioDemografico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DadoSocioDemografico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#ES -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#ES">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoLocalVacinacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoLocalVacinacao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoPaciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoPaciente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#FabricanteDaVacina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#FabricanteDaVacina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Feminino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Feminino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GrupoDeAtendimentoDoVacinado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GrupoDeAtendimentoDoVacinado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Masculino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Masculino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Nordeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Nordeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Norte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Norte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Pais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Pais"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Parda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Parda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Preta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Preta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DadoSocioDemografico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SemInformacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SemInformacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DadoSocioDemografico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SistemaDeOrigemDaVacina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SistemaDeOrigemDaVacina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sudeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sudeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Sul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RegiaoPais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#TO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#TO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#AP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#BA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#DF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#ES"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#GO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#MT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#PR"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RN"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RR"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#RS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#TO"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDOPaisDoVacinado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDaVacina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoEnderecamentoPostal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoMunicipioDoLocalDeVacinacao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoIBGEMunicipio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataNascimento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#descricaoDaDoseDaVacina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#id"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#idade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nacionalidadeDoVacinado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDaVacina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoFabricateDaVacina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDoMunicipio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeFantasiaDoLocalDeVacinacao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#numeroDoLoteDaVacina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#razaoSocialDoLocalDeVacinacao"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,1 +1,8 @@
 Column,Code,Class
+paciente_enumSexobiologico,M,:Masculino
+paciente_enumSexobiologico,F,:Feminino
+paciente_racaCor_valor,1,:Branca
+paciente_racaCor_valor,2,:Preta
+paciente_racaCor_valor,3,:Parda
+paciente_racaCor_valor,4,:Amarela
+paciente_racaCor_valor,99,:SemInformacao
