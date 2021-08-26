@@ -229,6 +229,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoEnderecamentoPostal">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
     </owl:DatatypeProperty>
     
@@ -256,7 +257,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataNascimento">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
     </owl:DatatypeProperty>
     
 
@@ -301,6 +302,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDaVacina">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
     </owl:DatatypeProperty>
     
 
