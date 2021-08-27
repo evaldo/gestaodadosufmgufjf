@@ -1,1 +1,33 @@
-Column,Attribute,attributeOf,Entity,Unit,Time,Relation,inRelationTo,Label,Role,Value,wasDerivedFrom,wasGeneratedBy
+Column;Attribute;attributeOf;Entity;Unit;Time;Relation;inRelationTo;Label;Role;Value;wasDerivedFrom;wasGeneratedBy
+document _id;hasco:originalID;??vacina;;;;;;;;;;
+paciente _id;vacinacao:id;??idpaciente;;;;;;;;;;
+paciente _idade;vacinacao:idade;??idadepaciente;;;;;;;;;;
+paciente _dataNascimento;vacinacao:dataNascimento;??datanascimentopaciente;;;;;;;;;;
+paciente _enum SexoBiologico;vacinacao:SexoBiologico;??sexopaciente;;;;;;;;;;
+paciente_racaCor _codigo;vacinacao:Raca;??racapaciente;;;;;;;;;;
+paciente _racaCor_valor;vacinacao:Raca;??racavalorpaciente;;;;;;;;;;
+paciente _endereco _colbgeMunicipio;vacinacao:codigoIBGEMunicipio;??codigomunicipio;;;;;;;;;;
+paciente_endereco_coPais;vacinacao:Pais;??paispaciente;;;;;;;;;;
+paciente _endereco_nmMunicipio;vacinacao:Municipio;??municipiopaciente;;;;;;;;;;
+paciente_endereco _nmPais;vacinacao:Pais;??paispaciente;;;;;;;;;;
+paciente _endere co_uf;vacinacao:UF;??ufpaciente;;;;;;;;;;
+paciente _endereco_cep;vacinacao:codigoDoEnderecamentoPostal;??ceppaciente;;;;;;;;;;
+paciente_nacionalidade _enum NacionaIidade;[duvida:precisa mapear?];;;;;;;;;;;
+estabelecimento_valor;[duvida:precisa mapear?];;;;;;;;;;;
+estabelecimenta_razaoSocia1;vacinacao:LocalVacinacao;??razaosocialvacinacao;;;;;;;;;;
+est abelecimento _noFantasia;vacinacao:LocalVacinacao;??nomefantasiavacinacao;;;;;;;;;;
+estabelecimento_municipio _codigo;[duvida:precisa mapear?];;;;;;;;;;;
+estabelecimento_municipio _nome;vacinacao:Municipio;??municipiolocalvacinacao;;;;;;;;;;
+estabelecimento_uf;vacinacao:UF;??uflocalvacinacao;;;;;;;;;;
+vacina_grupo_atendimento_code;[duvida:precisa mapear?];;;;;;;;;;;
+vacina_grupo_atendimento_nome;vacinacao:GrupoDeAtendimento;??grupodeatendimentodopaciente;;;;;;;;;;
+vacina_categoria_code;[duvida:precisa mapear?];;;;;;;;;;;
+vacina_categoria_nome;vacinacao:CategoriaDaVacina;??categoriadavacina;;;;;;;;;;
+vacina_lote;vacinacao:numeroDoLoteDaVacina;??nuimerolotevacina;;;;;;;;;;
+vacina_fabricante_nome;vacinacao:FabricanteDaVacina;??fabricantedavacina;;;;;;;;;;
+vacina_fabricante _referencia;[duvida:precisa mapear?];;;;;;;;;;;
+vacina _dataAplicacao;vacinacao:dataDaAplicacaoDaVacina;??datadaaplicacaodavacinanopaciente;;;;;;;;;;
+vacina_descricao_dose;vacinacao:descricaoDaDoseDaVacina;??descricaodadosedavacina;;;;;;;;;;
+vacina _codigo;vacinacao:CodigoDaVacina;??codigodavacina;;;;;;;;;;
+vacina_nome;vacinacao:NomeDaVacina;??nomedavacina;;;;;;;;;;
+sistema origem;vacinacao:SistemaDeOrigemDaVacina;??sistemadeorigemdavacina;;;;;;;;;;
