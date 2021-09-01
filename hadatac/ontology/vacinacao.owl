@@ -90,8 +90,41 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#pacientePossui">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#EnderecoPaciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Municipio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Pais"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Raca"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#SexoBiologico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#UnidadeFederativa"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDoEnderecamentoPostal"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataNascimento"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#idade"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nacionalidadeDoVacinado"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -201,7 +234,48 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinaPossui">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#CategoriaDaVacina"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#FabricanteDaVacina"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#codigoDaVacina"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#dataDaAplicacaoDaVacina"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#descricaoDaDoseDaVacina"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#nomeDaVacina"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#numeroDoLoteDaVacina"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinacaoECompostaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#vacinacaoECompostaPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacinacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#LocalDeVacinacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Paciente"/>
     </owl:ObjectProperty>
     
 
@@ -798,6 +872,12 @@
     <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacinacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evald/ontologies/2021/7/vacinacao#Vacinacao"/>
     
 
 
