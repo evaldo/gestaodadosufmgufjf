@@ -1,0 +1,18 @@
+cnes - Cadastro Nacional do Estabelecimento de Saúde
+dataNotificação: Data do Envio da Notificação de Ocupação de Leitos pelo CNES
+ocupacaoSuspeitoCli: Ocupação de suspeitos (Cli?)
+ocupacaoSuspeitoUti: Ocupação de suspeitos em Uti (?)
+ocupacaoConfirmadoCli: Ocupação de casos confirmados (Cli?)
+ocupacaoConfirmadoUti: Ocupação de casos confirmados em Uti (?)
+saidaSuspeitaObitos: Número altas por óbitos de casos suspeitos
+saidaSuspeitaAltas: Número altas de casos suspeitos
+saidaConfirmadaObitos: Número de altas por óbitos de casos confirmados
+saidaConfirmadaAltas: Número de altas dos casos confirmados
+origem: parse-cloud ou application-web ou RPA-(UF), por exemplo, RPA-MG, RPA-SP, etc...
+_p_usuario: É uma chave
+estadoNotificacao: Unidade Federativa que originou os dados de notificação do número de leitos ocupados.
+municipioNotificacao: Município que originou os dados de notificação do número de leitos ocupados.
+estado: Unidade Federativa (?)
+municipio: Município (?)
+excluido: (?)
+validado: (?)
