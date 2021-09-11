@@ -1,0 +1,11 @@
+Column,Attribute,attributeOf,Entity,Unit,Time,Relation,inRelationTo,Label,Role,Value,wasDerivedFrom,wasGeneratedBy
+IDDoenca,odm:identificadorDoenca,??doencadetranstornomental,,,,,,,,,,
+nmdoenca,odm:nomeDaDoenca,??nomedadoencadetranstornomental,,,,,,,,,,
+CID,odm:ClassificacaoInternacionalDeDoenca,??cidemdoencamental,,,,,,,,,,
+??doencadetranstornomental,,,odm:IdentificadorDoenca,,,,,,,,,
+??nomedadoencadetranstornomental,,,odm:nomeDaDoenca,,,,,,,,,
+??cidemdoencamental,,,odm:ClassificacaoInternacionalDeDoenca,,,,,,,,,
+??doenca,,,odm:TranstornoMental,,,,,,,,,
+??doenca,,,odm:TranstornoMental,,,odm:doencaPossui,odm:identificadorDoenca,,,,,
+??doenca,,,odm:TranstornoMental,,,odm:doencaPossui,odm:nomeDeDoenca,,,,,
+??doenca,,,odm:TranstornoMental,,,odm:classificadaComo,odm:ClassificacaoInterncacionalDeDoencaMental,,,,,
