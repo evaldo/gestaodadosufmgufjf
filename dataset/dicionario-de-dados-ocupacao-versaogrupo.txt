@@ -1,3 +1,5 @@
+Pessoal, bom dia. Na última reunião decidimos utilizar o dataset contendo informações sobre a ocupação de leitos. A ideia é cruzar os dados com a cobertura vacinal. Utilizei o dataset sugerido no grupo (https://dados.gov.br/dataset/registro-de-ocupacao-hospitalar). Fiz a análise do dataset e o resultado segue abaixo com a descrição de todos os campos. Porém, não encontrei a definição dos campos e tentei defini-los, gerando algumas dúvidas. 
+
 cnes - Cadastro Nacional do Estabelecimento de Saúde
 dataNotificação: Data do Envio da Notificação de Ocupação de Leitos pelo CNES
 ocupacaoSuspeitoCli: Ocupação de suspeitos (Cli?)
@@ -16,3 +18,7 @@ estado: Unidade Federativa (?)
 municipio: Município (?)
 excluido: (?)
 validado: (?)
+
+Talvez seja necessário encontrarmos outra base, ou utilizar esta mesmo. Fico no aguardo sobre a decisão. Assim que decidirmos, farei a modelagem.
+
+Para complementar, encontrei o dataset do Cadastro Nacional de Estabelecimentos de Saúde (CNES). Os códigos dos CNES do dataset de ocupação são os mesmos encontrados no dataset de cadastro do CNAES.
